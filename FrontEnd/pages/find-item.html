@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMS - Find Item</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    
+    <!-- My Stylesheets -->
+    <link rel="stylesheet" href="../styles/Common/globals.css">
+    <link rel="stylesheet" href="../styles/Common/main-layout.css">
+    <link rel="stylesheet" href="../styles/Common/header.css">
+    <link rel="stylesheet" href="../styles/find-item.css">
+    <link rel="shortcut icon" type="image/svg" href="../icons/General/Vector.svg"/>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="overlay invisible"></div>
+    <main class="main-content">
+
+        <!-- Main Content -->
+        <div class="main-container">
+            <header class="head-noheader">
+                <h2>FIND ITEM</h2>
+                <a><button id="logout-btn"><img src="../icons/General/logout.svg" alt=""></button></a>
+            </header>
+
+            <div id="searchBar">
+                <input type="search" name="search-input" id="search-input" placeholder="Apply Filters and Search...">
+                <button class="search-btn"><img src="../icons/Hub/search.svg" alt=""></button>
+            </div>
+            <div class="filter-bar">
+                <div class="filter-search">
+                    <div class="filter selected" id="all">All</div>
+                    <div class="filter" id="product">Product</div>
+                    <div class="filter" id="inventory">Inventory</div>
+                </div>
+
+                <div class="filter-display">
+                    <div class="display-option selected" id="list">&#9776;</div>
+                    <div class="display-option" id="grid">&#8983;</div>
+                </div>
+
+            </div>
+
+            <!-- 
+                Product: 
+                    GROUP-SERIES  SN-START xQTY  12-20-25 
+                Inventory: 
+                    NAME SN xQTY 12-20-25
+            --> 
+
+
+            <div id="searchRes" class="searchRes">
+
+                <!-- <div class="res-card product-card" tabindex="0">
+                    <div class="card-top">
+                        <span class="card-title">PRODUCT</span>
+                        <span class="item-date">10/25/30</span>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span class="item-name" >HTL-009</span>
+                        <span class="item-serial" >#10029 - 10031</span>
+                        <span class="item-qty" >x20</span>
+                    </div>
+                    
+                </div>
+
+
+                <div class="res-card invent-card" tabindex="1">
+                    <div class="card-top">
+                        <span class="card-title">INVENTORY</span>
+                        <span class="item-date">1/9/30</span>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span class="item-name">Inner Transport Tube</span>
+                        <span class="item-serial">#A31221</span>
+                        <span class="item-qty">x4</span>
+                    </div>
+                    
+                </div> -->
+
+            </div>
+
+
+            <a href="./ui-hub.html" id='btn-back'><button id="back-btn"  class="btn-back">Back</button></a>
+            
+        
+        </div>
+
+
+        <script src="../scripts/find-item.js"></script>
+        <script src="../scripts/dev-config.js"></script>
+    </main>
+</body>
+</html>

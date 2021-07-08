@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMS - Hub</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&display=swap" rel="stylesheet"> 
+    
+    <!-- My Stylesheets -->
+    <link rel="stylesheet" href="../styles/Common/globals.css">
+    <link rel="stylesheet" href="../styles/Common/main-layout.css">
+    <link rel="stylesheet" href="../styles/Common/header.css">
+    <link rel="stylesheet" href="../styles/ui-hub.css">
+    <link rel="shortcut icon" type="image/svg" href="../icons/General/Vector.svg"/>
+
+
+</head>
+<body>
+    
+
+    
+    <main class="main-content">
+        <!-- Main Header -->
+        <header id="ims-header">
+            <img src="../images/Logo/Aeri.svg" alt="Aerico Logo" id="logo-image">
+            <div id="logo-text">
+                <p id="logo-text-inventory">Inventory</p>
+                <p id="logo-text-management">Management</p>
+                <p id="logo-text-inventory">System</p>
+            </div>
+        </header>
+
+        <div id="hub-links">
+
+            <!-- Add Item Button -->
+            <a href="add-item.html" id="link-1">
+                <div class="hub-link">
+                    <img src="../icons/Hub/plus.svg" alt="">
+                </div>
+            </a>
+
+            <!-- Find Item Button -->
+            <a href="find-item.html">
+                <div class="hub-link">
+                    <img src="../icons/Hub/search.svg" alt="">
+                </div>
+            </a>
+            
+            <!-- Add Item Label -->
+            <div class="label-text"> 
+                <p>Add Item</p>
+            </div>
+            
+            <!-- Find Item Label -->
+            <div class="label-text"> 
+                <p>Find Item</p>
+            </div>
+
+            <!-- Settings Button -->
+            <a href="settings.html">
+                <div class="hub-link">
+                    <img src="../icons/Hub/settings.svg" alt="">
+                </div>
+            </a>
+
+            <!-- Logout Button -->
+            <a id="logout-btn">
+                <div class="hub-link">
+                    <img src="../icons/Hub/logout.svg" alt="">
+                </div>
+            </a>
+
+            <!-- Settings Label -->
+            <div class="label-text"> 
+                <p>Settings</p>
+            </div>
+            
+            <!-- Logout Label -->
+            <div class="label-text"> 
+                <p>Logout</p>
+            </div>
+
+        </div>
+    </main>
+    <script src="../scripts/dev-config.js"></script>
+</body>
+</html>

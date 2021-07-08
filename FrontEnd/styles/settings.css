@@ -1,0 +1,59 @@
+.settings-panel {
+   min-height: 100px;
+
+}
+
+.btn-back {
+    margin: 1em;
+    margin-top: 0;
+    margin-left: 1.5em;
+
+    border-radius: 10px;
+    border: none;
+    font-family: blinker;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+    
+    color:rgba(255, 255, 255, 0.76);
+    background-color: var(--color-orange);
+    box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.25);
+    
+    transition: background-color 10ms ease-in-out;
+    cursor: pointer;
+    padding: .5rem 2em;
+}
+.btn-back:hover {
+    background-color: var(--color-orange-hover);
+}
+
+main {
+    width: 26%;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container #btn-back {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+
+.add-item-footer {
+    width: 100%;
+}
+
+
+.settings-panel {
+    font-family: blinker;
+    font-size: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(153, 161, 165, 0.329);
+    margin: 1em;
+    padding: 0 1.2em;
+    border-radius: 10px;
+}

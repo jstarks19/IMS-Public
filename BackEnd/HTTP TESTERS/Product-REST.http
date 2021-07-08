@@ -1,0 +1,51 @@
+
+###
+GET http://127.0.0.1:3000/products HTTP/1.1
+
+###
+GET http://127.0.0.1:3000/products/0 HTTP/1.1
+
+###
+POST http://127.0.0.1:3000/products HTTP/1.1
+content-type: application/json
+
+{
+	"group": "HTL",
+	"series": "008",
+	"serials": ["001", "002"],
+	"quantity": 2,
+	"dateEntry": "2021-10-10",
+	"amountOfSale": 1000,
+	"description": "this is my description"
+}
+
+
+
+
+### 
+PUT http://127.0.0.1:3000/products/60e5f3ff844f77406d3aa7d3 HTTP/1.1
+content-type: application/json 
+
+{
+	"group": "HTL2",
+	"series": "00833",
+	"serials": ["00123", "002"],
+	"quantity": 10,
+	"date": "2021-1-20",
+	"amountOfSale": 1000,
+	"description": "this is my new description"
+}
+
+
+
+###
+DELETE http://127.0.0.1:3000/products/60e5f3ff844f77406d3aa7d3 HTTP/1.1
+
+
+
+###
+DELETE http://127.0.0.1:3000/products/ HTTP/1.1
+
+
+
+

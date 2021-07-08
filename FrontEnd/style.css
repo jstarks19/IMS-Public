@@ -1,0 +1,164 @@
+html {
+    background-image: url("./images/Background.png");
+    color: rgba(255,255,255,0.5);
+    font-family: 'Blinker', sans-serif;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+.login {
+    background-color: #212936;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin: 100px 0px 0px 0px;
+    width: 22%;
+    align-content: center;
+}
+
+.header-box {
+    background: rgba(42, 60, 68, .7);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 0px 0px 0px;
+    margin: 10px;
+    display: flex;
+}
+
+.header-box img {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 12px 30px;
+}
+
+.ims-logo {
+    padding:  0px, 0px, 0px, 0px;
+    margin: 0px;
+    font-size: 1.3em;
+}
+
+.ims-logo b {
+    color: rgba(223, 119, 28, 0.71);
+    font-weight: 1.5em;
+}
+
+
+.ims-inv p {
+    padding: 4px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    letter-spacing: 1px;
+}
+
+.ims-man p {
+    padding: 0px 0px 0px 25px;
+    margin: 0px 0px 0px 0px;
+    letter-spacing: 1px;
+}
+
+.ims-sys p {
+    padding: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 0px;
+    letter-spacing: 1px;
+}
+
+
+.login-box {
+    background: rgba(42, 60, 68, .7);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px 0px 0px 0px;
+    margin: 20px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login-box .login-btn {
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-user input {
+    border-radius: 14px;
+    border-style: none;
+    height: 2.4em;
+    background-color: #546074;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 2px 0px 30px 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+.login-user input, select {
+    color: rgba(255,255,255,0.8);
+}
+
+.login-user input:hover {
+    background-color: #606c83;
+}
+
+
+.login-user p {
+    padding: 0 0 0 8px;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+
+.login-pass input {
+    border-radius: 14px;
+    border-style: none;
+    height: 2.4em;
+    background-color: #546074;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 2px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+.login-pass input, select {
+    color: rgba(255,255,255,0.8);
+}
+
+.login-pass input:hover {
+    background-color: #606c83;
+}
+
+.login-pass p {
+    padding: 0 0 0 8px;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+
+.login-btn input {
+    width: 5.2em;
+    height: 1.6em;
+    background: rgba(223, 119, 28, 0.71);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    border-style: none;
+    font-size: 1.4em;
+    color: rgba(255,255,255,0.7);
+    font-family: 'Blinker', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.login-btn input:hover {
+    background: rgba(177, 92, 18, 0.71);
+    color: rgba(255,255,255,0.5);
+}
+

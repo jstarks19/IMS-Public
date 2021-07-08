@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerico IMS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- My Stylesheets -->
+    <link rel="stylesheet" href="styles/Common/globals.css" />
+    <link rel="stylesheet" href="styles/Common/main-layout.css" />
+    <link rel="stylesheet" href="styles/Common/header.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="shortcut icon" type="image/svg" href="./icons/General/Vector.svg"/>
+  </head>
+
+  <body>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Main Header -->
+      <header id="ims-header">
+        <img src="images/Logo/Aeri.svg" alt="Aerico Logo" id="logo-image" />
+        <div id="logo-text">
+          <p id="logo-text-inventory">Inventory</p>
+          <p id="logo-text-management">Management</p>
+          <p id="logo-text-inventory">System</p>
+        </div>
+      </header>
+
+      <!-- Login Form -->
+      <form action="http://localhost:3000/login" id="index-login-box" method="POST">
+        <div class="label-w-input">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="you@aericoindustries.com" />
+        </div>
+
+        <div class="label-w-input">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="password" />
+        </div>
+
+        <button type="button" id="login-btn">Login</button>
+      </form>
+    </main>
+
+    <script src="scripts/dev-config.js"></script>
+  </body>
+</html>
+<!-- https://aerico-ims.dev/login -->

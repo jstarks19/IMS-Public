@@ -1,0 +1,63 @@
+###
+POST http://127.0.0.1:3000/register HTTP/1.1
+content-type: application/json
+
+{
+	"username": "jason@aericoindustries.com",
+	"password": "Gamefreak091998"
+}
+
+###
+DELETE http://127.0.0.1:3000/register HTTP/1.1
+
+
+###
+GET http://127.0.0.1:3000/register HTTP/1.1
+
+
+### 
+POST http://127.0.0.1:3000/login HTTP/1.1
+content-type: application/json
+
+{
+	"username": "jason@aericoindustries.com",
+	"password": "Gamefreak091998"
+}
+
+
+
+
+
+###
+POST http://127.0.0.1:3000/products HTTP/1.1
+content-type: application/json
+
+{
+	"group": "HTL",
+	"series": "007",
+	"serials": ["001", "002"],
+	"quantity": 2,
+	"dateOfSale": "2-10-20",
+	"amountOfSale": 1000,
+	"description": "PRODUCTS"
+}
+
+
+###
+POST http://127.0.0.1:3000/inventory HTTP/1.1
+content-type: application/json
+
+{
+	"name": "HTL",
+	"serial": "001",
+	"quantity": 2,
+	"description": "INVENTORY"
+}
+
+
+
+
+
+###
+GET http://127.0.0.1:3000/search?term=&filter=all HTTP/1.1
+

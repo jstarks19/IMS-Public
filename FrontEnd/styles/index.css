@@ -1,0 +1,48 @@
+
+/*  Login Box */
+#index-login-box {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2em;
+    margin: 1em;
+
+    border-radius: 1em;
+    
+    background-color: rgba(43, 61, 70, 0.71);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+#index-login-box button {
+    margin-top: 1em;
+    border: none;
+    border-radius: .5em;
+    padding: .5em 2em;
+    
+    font-family: blinker;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 1.1px;
+    
+    color:rgba(255, 255, 255, 0.76);
+    background-color: var(--color-orange);
+    box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.25);
+    
+    transition: transform 10ms ease-in, background-color 10ms ease-in;
+}
+#index-login-box button:hover {
+    background-color: var(--color-orange-hover);
+    transform: scale(1.05);
+}
+
+/* Input & Labels */
+#index-login-box div:nth-of-type(1){
+    margin-bottom: 1em;
+}
+#index-login-box div:nth-of-type(2){
+    margin-bottom: 1.5em;
+}
+

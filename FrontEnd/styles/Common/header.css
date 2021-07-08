@@ -1,0 +1,52 @@
+
+/* IMS Header General */
+#ims-header {
+    background: linear-gradient(70deg, #283741 55%, #2a3c44 55%);
+    background-color: rgba(43, 61, 70, 0.71);
+
+    padding: .1em 0em;
+    margin: 1em;
+    border-radius: 1em;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/* Aerico Logo */
+#ims-header img {
+    width: 10em;
+    margin-left: 10px;
+    padding: .4em 0em;
+    position: relative;
+    left: 1em;
+}
+
+/* IMS Logo Text */
+#logo-text {
+    font-family: blinker;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4em;
+    line-height: .2em;
+    align-self: center;
+    position: relative;
+    left: .1em;
+}
+#logo-text p:nth-child(1) {
+    position: relative;
+    right: 1em;
+}
+#logo-text p:nth-child(2) {
+    position: relative;
+    right: .5em;
+}
+#logo-text p:nth-child(3) {
+    position: relative;
+    right: 0em;
+}
+#logo-text p::first-letter {
+    font-weight: bold;
+    color: var(--color-orange);
+    letter-spacing: 1px;
+}

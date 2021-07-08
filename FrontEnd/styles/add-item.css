@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+}
+
+main {
+  width: 26%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(19, 31, 36, 0.26);
+  border-radius: 10px;
+  padding: 1em 1em;
+  margin: 20px 2px 2px 2px;
+  font-family: blinker;
+  font-size: 1.2em;
+}
+
+.dynamic-form {
+  margin-top: 2em;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+}
+
+.add-item-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+.add-item-footer button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 2em;
+
+  font-family: blinker;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 1.1px;
+
+  color: rgba(255, 255, 255, 0.76);
+  background-color: var(--color-orange);
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.25);
+
+  transition: background-color 10ms ease-in-out;
+  cursor: pointer;
+}
+.add-item-footer button:hover {
+  background-color: var(--color-orange-hover);
+}
+
+.inp-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.inp-2 input {
+  width: 9rem;
+  margin-right: 1em;
+}
+
+.inp-3 {
+  display: flex;
+  justify-content: flex-start;
+}
+.inp-3 input {
+  width: 6em;
+  margin-right: 1em;
+}
+
+#itemName {
+  width: 10em;
+}
+
+#serialNumber {
+  width: 8em;
+}
+
+#quantity {
+  width: 6em;
+}
+
+.itemDescription {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.itemDescription label {
+  margin-bottom: 0.1em;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  position: relative;
+  left: 0.2em;
+  color: var(--color-font);
+}
+.itemDescription textArea {
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  padding: 0.5em;
+
+  box-sizing: border-box;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  color: whitesmoke;
+  background-color: #546074;
+}
+.itemDescription textarea:focus {
+  /* Remove Blue Highlight */
+  outline: none;
+
+  box-sizing: border-box;
+  box-shadow: 0 0 1px #ca7608, 0 0 2px #ff8c00;
+}
+
+/* Select Item */
+/*  
+    - The radio selector at the top of the form
+*/
+
+.select-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-item span {
+  font-size: 1.2em;
+  color: var(--color-font);
+}
+.select-item .selector {
+  display: flex;
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #546074;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.selector .selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: auto;
+  transition: all 200ms ease-in-out;
+  padding: 0.5em 0.8em;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.788);
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.selection:nth-of-type(1) {
+  border-radius: 5px 0px 0px 5px;
+}
+.selection:nth-of-type(2) {
+  border-radius: 0px 5px 5px 0px;
+}
+.selected {
+  background-color: #b16e34;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.selection:not(.selected):hover {
+  background-color: rgba(235, 135, 47, 0.2);
+}
+
+.popup {
+  background: linear-gradient(270deg, rgba(0, 255, 25, 0.05) 0%, #528958 47.92%, rgba(0, 255, 25, 0) 100%);
+
+  position: relative;
+  top: 20px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: heebo;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.9);
+
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.popup-success {
+  background: linear-gradient(270deg, rgba(0, 255, 25, 0.05) 0%, #528958 47.92%, rgba(0, 255, 25, 0) 100%);
+}
+
+.popup-error {
+  background: linear-gradient(270deg, rgba(255, 0, 0, 0.05) 0%, #895252 47.92%, rgba(255, 0, 0, 0) 100%);
+}
