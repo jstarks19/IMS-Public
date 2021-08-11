@@ -1,6 +1,6 @@
 # Inventory Management System (Public Use)
 
-The Public version of my inventory management system web application.
+The Public version of my inventory management system web application
     - Available for use @ https://public-ams.netlify.app
 
 The Private version of this application is located on a VPS and utilizes a backend written with Node & Express
